@@ -24,6 +24,7 @@ export function SideBar({ selectedGenreId, handleClickButton }: SideBarProps, ) 
     });
   }, []);
   
+  // retorna o HTML
   return (
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>

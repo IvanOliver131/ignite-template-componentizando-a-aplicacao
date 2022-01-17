@@ -18,6 +18,7 @@ interface SideBarProps {
 export function SideBar({ selectedGenreId, handleClickButton }: SideBarProps, ) { 
   const [genres, setGenres] = useState<GenreResponseProps[]>([]); 
 
+  // traz os dados da API 
   useEffect(() => {
     api.get<GenreResponseProps[]>('genres').then(response => {
       setGenres(response.data);

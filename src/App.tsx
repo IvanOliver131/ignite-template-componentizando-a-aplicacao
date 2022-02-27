@@ -11,6 +11,7 @@ interface GenreResponseProps {
   title: string;
 }
 
+// Função principal
 export function App() {  
   const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>({} as GenreResponseProps);
   const [selectedGenreId, setSelectedGenreId] = useState(1);
